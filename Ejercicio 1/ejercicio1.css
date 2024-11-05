@@ -1,0 +1,11 @@
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr 25%;
+    grid-template-rows: 50px 100px;
+    height: 100vh;
+}
+
+.item1 {
+    background-image: url('assets/picture1.jpg');
+    height: 100px;
+}
