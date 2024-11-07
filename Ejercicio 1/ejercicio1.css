@@ -1,11 +1,66 @@
-.contenedor-grid {
-    display: grid;
-    grid-template-columns: 100px 1fr 25%;
-    grid-template-rows: 50px 100px;
-    height: 100vh;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.item1 {
+.contenedor-grid {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 200px;
+    grid-template-columns: 1fr 200px 2fr 1fr;
+    height: 100vh;
+    gap: 10px;
+}
+
+.imagen1 {
     background-image: url('assets/picture1.jpg');
-    height: 100px;
+    grid-area: 1 / 1 / 3 / 3;
+    background-size: cover;
+}
+
+.imagen2 {
+    background-image: url('assets/picture2.jpg');
+    grid-area: 1 / 3 / 3 / 4;
+    background-size: cover;
+}
+
+.imagen3 {
+    background-image: url('assets/picture3.jpg');
+    background-size: cover;
+}
+
+.imagen4 {
+    background-image: url('assets/picture4.jpg');
+    background-size: cover;
+}
+
+.imagen5 {
+    background-image: url('assets/picture5.jpg');
+    background-size: cover;
+}
+
+.imagen6 {
+    background-image: url('assets/picture6.jpg');
+    background-size: cover;
+}
+
+.imagen7 {
+    background-image: url('assets/picture7.jpg');
+    background-size: cover;
+}
+
+.imagen8 {
+    background-image: url('assets/picture8.jpg');
+    grid-area: 3 / 4 / 5 / 5;
+    background-size: cover;
+}
+
+.imagen9 {
+    background-image: url('assets/picture9.jpg');
+    grid-area: 4 / 1 / 5 / 3;
+    background-size: cover;
+}
+
+.imagen10 {
+    background-image: url('assets/picture10.jpg');
+    background-size: cover;
 }
