@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: auto 1fr auto;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -29,34 +29,21 @@ body {
 
 .contenedor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     background-color: rgb(227, 227, 227);
     padding: 5px;
 }
 
 .pies {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: auto 1fr auto;
     text-align: center;
     background-color: black;
     color: white;
 }
 
 @media(max-width: 1000px) {
-    body {
-        display: grid;
-        grid-template-rows: 100px 1fr 0.3fr;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-    }
-    .cabecera {
-        background-color: green;
-        text-align: center;
-        color: white;
-    }
-
     .cuerpo {
         display: grid;
         grid-template-columns: 1fr;
@@ -71,15 +58,18 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
-       
+
     }
-    .social{
+
+    .social {
         grid-row: 1;
     }
-    .sobre{
+
+    .sobre {
         grid-row: 2;
     }
-    .derechos{
+
+    .derechos {
         grid-row: 3;
     }
 }
