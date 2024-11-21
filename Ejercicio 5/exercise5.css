@@ -114,7 +114,7 @@
             font-size: 1rem;
         }
 
-        &:is(.title, .description) {
+        :is(.title, .description) {
             margin-bottom: 0.5rem;
         }
 
