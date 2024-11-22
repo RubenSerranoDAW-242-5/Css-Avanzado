@@ -50,7 +50,7 @@ body {
         grid-template-rows: 200px 1fr;
         grid-template-areas: "barra-lateral" "contenedor-grid";
         text-align: center;
-        align-items: centers;
+        align-items: center;
     }
 
     .pies {
